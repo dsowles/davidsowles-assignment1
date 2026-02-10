@@ -1,17 +1,26 @@
+/******************************************************************************
+Filename: index.js
+Author: David A. Sowles
+Created: 02/09/2026
+Description:  The main entry point for the application. This file mounts the 
+              React component tree to the physical HTML DOM.
+******************************************************************************/
+
+
+/******************************************************************************
+ * IMPORTS
+ *****************************************************************************/
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+/****************************************************************************/
 
+// Link React to the <div id="root"> element in your HTML
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Render the JSX to an HTML document.
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
